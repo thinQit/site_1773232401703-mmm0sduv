@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Playfair_Display, Lato } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "Authentic Japanese ramen in Portland, Oregon. Tonkotsu, miso, and shoyu ramen with handmade noodles, cozy counter seating, and traditional decor. Reserve a seat or walk in.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${lato.variable} font-body bg-background text-foreground`}>
@@ -44,5 +45,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ],
             },
             {
-              title: "Explor
-... [truncated]
+              title: "Hours",
+              links: [
+                { label: "Mon–Thu: 11:30am – 9pm", href: "/" },
+                { label: "Fri–Sat: 11:30am – 10pm", href: "/" },
+                { label: "Sun: 12pm – 8pm", href: "/" },
+              ],
+            },
+            {
+              title: "Explore",
+              links: [
+                { label: "Menu", href: "/menu" },
+                { label: "Reservations", href: "/reservations" },
+                { label: "Gift Cards", href: "/" },
+              ],
+            },
+          ]}
+        />
+      </body>
+    </html>
+  );
+}
