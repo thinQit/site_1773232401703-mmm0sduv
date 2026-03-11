@@ -1,4 +1,3 @@
-"use client";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
@@ -45,27 +44,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ],
             },
             {
-              title: "Explore",
-              links: [
-                { label: "Menu", href: "/menu" },
-                { label: "Reservations", href: "/reservations" },
-                { label: "Gallery", href: "/gallery" },
-                { label: "About", href: "/about" },
-                { label: "Contact", href: "/contact" },
-              ],
-            },
-            {
-              title: "Hours",
-              links: [
-                { label: "Mon–Thu 11:30–21:00", href: "/contact#hours" },
-                { label: "Fri–Sat 11:30–22:00", href: "/contact#hours" },
-                { label: "Sun 12:00–20:00", href: "/contact#hours" },
-              ],
-            },
-          ]}
-          copyright="© 2026 Kumo Ramen. All rights reserved."
-        />
-      </body>
-    </html>
-  );
-}
+              title: "Explor
+... [truncated]
