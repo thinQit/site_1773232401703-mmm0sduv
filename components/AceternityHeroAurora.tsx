@@ -23,7 +23,7 @@ export default function AceternityHeroAurora({
     <AuroraBackground className="relative bg-[#722F37] !overflow-visible">
       <section className="relative mx-auto grid min-h-[78vh] max-w-7xl items-center gap-8 px-4 py-20 md:grid-cols-2 md:px-6">
         <div>
-          <h1 className="font-serif text-5xl md:text-7xl text-accent mb-2">{headline}</h1>
+          <h1 className="font-serif text-2xl md:text-4xl text-accent mb-2">{headline}</h1>
           {subheadline && (
             <p className="mt-4 max-w-xl text-lg md:text-2xl text-primary-foreground/85">{subheadline}</p>
           )}
