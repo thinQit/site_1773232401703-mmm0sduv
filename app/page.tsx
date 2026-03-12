@@ -12,7 +12,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function HomePage() {
   return (
-    <main className="pt-20">
+    <main className="pt-20 homepage-main">
       <div className="animate-fade-in-up">
         <AceternityHeroAurora
           headline="Portland ramen, made the slow way."
