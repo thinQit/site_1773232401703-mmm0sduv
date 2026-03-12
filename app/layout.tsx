@@ -1,12 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Playfair_Display, Lato } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-heading" });
-const lato = Lato({ subsets: ["latin"], weight: ["300", "400", "700"], variable: "--font-body" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Kumo Ramen | Handmade Noodles & Tonkotsu in Portland, OR",
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${lato.variable} font-body bg-background text-foreground`}>
+      <body className={`${inter.variable} font-sans bg-background text-foreground`}>
         <Navbar
           logo="Kumo Ramen"
           navItems={[
