@@ -19,7 +19,7 @@ export default function HomePage() {
           subheadline="Tonkotsu, miso, and shoyu ramen with handmade noodles—served in a warm, wood-and-paper dining room built for lingering."
           primaryCta={{ label: "Reserve a seat", href: "/reservations" }}
           secondaryCta={{ label: "View the menu", href: "/menu" }}
-          backgroundImageUrl="https://res.cloudinary.com/dwc294mzm/image/upload/c_fill,w_1200,h_800,g_auto/v1771577700/site-images/hero-backgrounds/13551578.jpg"
+          backgroundImageUrl="https://picsum.photos/seed/ramen-hero/1200/600"
         />
       </div>
       <ScrollReveal><MenuTabs /></ScrollReveal>
