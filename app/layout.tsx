@@ -12,7 +12,7 @@ const pressStart = Press_Start_2P({
 });
 
 export const metadata: Metadata = {
-  title: "Kumo Ramen | Handmade Noodles & Tonkotsu in Portland, OR",
+  title: "sankalp | Handmade Noodles & Tonkotsu in Portland, OR",
   description:
     "Authentic Japanese ramen in Portland, Oregon. Tonkotsu, miso, and shoyu ramen with handmade noodles, cozy counter seating, and traditional decor. Reserve a seat or walk in.",
 };
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className={`${pressStart.variable} font-sans bg-background text-foreground`}>
         <Navbar
-          logo="Kumo Ramen"
+          logo="sankalp"
           navItems={[
             { label: "Home", href: "/" },
             { label: "Menu", href: "/menu" },
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
         {children}
         <Footer
-          brand="Kumo Ramen"
+          brand="sankalp"
           description="Handmade noodles and slow-simmered broths in the heart of Portland."
           columns={[
             {
