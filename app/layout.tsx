@@ -1,11 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Press_Start_2P } from "next/font/google";
+import { Oswald } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const pressStart = Press_Start_2P({
+const oswald = Oswald({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-sans",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${pressStart.variable} font-sans bg-background text-foreground`}>
+      <body className={`${oswald.variable} font-sans bg-background text-foreground`}>
         <Navbar
           logo="sankalp"
           navItems={[
