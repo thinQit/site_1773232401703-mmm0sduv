@@ -83,7 +83,7 @@
     line-height: 1.2;
   }
   .homepage-main h1 {
-    font-size: 68px;
+    font-size: max(16px, calc(68px - 80px));
     line-height: 1.2;
   }
 }
